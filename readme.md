@@ -16,13 +16,6 @@ $ cd <path-to>/archiver
 $ mvn clean package
 ```
 
-For production environments...
-
-```sh
-$ npm install --production
-$ NODE_ENV=production node app
-```
-
 ### Запуск приложения
 ##### Архивация данных:
 Исходные файлы для архивации должны быть указаны в качестве параметром запуска программы через пробел.
