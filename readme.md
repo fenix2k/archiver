@@ -9,18 +9,18 @@ Java Runtime Enviroment 11 \
 
 ### Процесс сборки
 
-Для компиляции приложения Archiver требуется JDK 11 или выше и maven версии 2 и выше.
+Для компиляции приложения Archiver требуется JDK 11 или выше и maven версии 3 и выше.
 ```sh
 $ git clone https://github.com/fenix2k/archiver
 $ cd ./archiver
-$ mvn clean package
+$ mvn package
 ```
-Скомпилированный файл будет находится в\
+Скомпилированный готовый к запуску JAR файл будет находится в\
 ./target/archiver-1.0-jar-with-dependencies.jar
 
 ### Тестирование
 В процессе компиляции и сборки (mvn package) производится юнит-тестирование класса Archiver.
-Для тестирования создана директория ./_test, содержимое которой используется для архивирования и проверки работы программы.\
+Для тестовых данных создана директория ./_test, содержимое которой используется для архивирования и проверки работы программы.\
 Запуск тестирования:
 ```sh
 $ mvn test
@@ -38,7 +38,11 @@ $ java -jar ./target/archiver-1.0-jar-with-dependencies.jar "./_test/testData/" 
 ```
 
 ##### Распаковка:
-Распакова производиться в текущую директорию.
+Распаковка производиться в текущую директорию.
+```sh
+$ cat <archived-file> | java -jar ./target/archiver-1.0-jar-with-dependencies.jar
+```
+Готовый пример:
 ```sh
 $ cat ./zip123.zip | java -jar ./target/archiver-1.0-jar-with-dependencies.jar
 ```
