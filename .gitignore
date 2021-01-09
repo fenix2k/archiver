@@ -8,7 +8,7 @@ target/*
 .mvn/*
 *.zip
 *.log
-exec
+./exec
 
 ### IntelliJ IDEA ###
 .idea

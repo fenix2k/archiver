@@ -1,8 +1,5 @@
 import org.apache.log4j.Logger;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.io.*;
 import java.lang.reflect.Method;
@@ -27,6 +24,8 @@ class TestArchiver {
   private List<File> originalFiles;
   /** Заархивированный файл */
   private File outputFile;
+  /** Заархивированный файл */
+  private final File testArchiveFile = new File("./_test/test-archive.zip");
 
   /**
    *  Метод запускается перед каждым тестом
@@ -125,9 +124,7 @@ class TestArchiver {
         new File("_test/testData0/folderWithFiles0/element-list"),
         new File("_test/testData0/folderWithFiles0/index-all.html"),
         new File("_test/testData0/folderWithFiles0/index.html"),
-        new File("_test/testData0/folderWithFiles0/deprecated-list.html"),
-        new File("_test/testData0/emptyFolder0/emptyFolder1-1"),
-        new File("_test/testData0/emptyFolder0/emptyFolder1-0/emptyFolder2")
+        new File("_test/testData0/folderWithFiles0/deprecated-list.html")
     ));
 
     try {
