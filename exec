@@ -1,0 +1,8 @@
+export JAVA_HOME='/usr/lib/jvm/java-1.11.0-openjdk-amd64'
+
+mvn clean
+mvn package
+
+java -jar ./target/archiver-1.0-jar-with-dependencies.jar "./_test/testData/" "./_test/testData0/" "./_test/testData1" ./_test/recovery.img > zip123.zip
+cat ./zip123.zip | java -jar ./target/archiver-1.0-jar-with-dependencies.jar
+
