@@ -42,3 +42,9 @@ $ java -jar ./target/archiver-1.0-jar-with-dependencies.jar "./_test/testData/" 
 ```sh
 $ cat ./zip123.zip | java -jar ./target/archiver-1.0-jar-with-dependencies.jar
 ```
+
+### Документация Javadoc
+Создание документации Javadoc
+```sh
+$ mvn javadoc:javadoc
+```
