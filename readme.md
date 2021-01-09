@@ -48,3 +48,5 @@ $ cat ./zip123.zip | java -jar ./target/archiver-1.0-jar-with-dependencies.jar
 ```sh
 $ mvn javadoc:javadoc
 ```
+Документация генерируется в директорию \
+./target/site/apidocs
