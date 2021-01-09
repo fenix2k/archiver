@@ -1,4 +1,0 @@
-3 product Name3  142.5  23
-4 product2   Name  1432.5  233
-35 product3 Name5  142.45  323
- 44   product23 Name  1432.35  33 
